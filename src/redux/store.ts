@@ -1,7 +1,10 @@
 import { configureStore, ThunkAction, Action } from "@reduxjs/toolkit";
+import { robotReducer } from "./features/RobotsSlice/RobotsSlice";
 
 export const store = configureStore({
-  reducer: {},
+  reducer: {
+    robotsActions: robotReducer,
+  },
 });
 
 export type AppDispatch = typeof store.dispatch;
