@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import Robot from "../../../types";
+import { Robot } from "../../../types.js";
 
 export interface RobotState {
   robots: Robot[];
