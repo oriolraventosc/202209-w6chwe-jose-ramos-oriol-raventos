@@ -1,20 +1,16 @@
-import { useAppSelector } from "../../redux/hooks";
-
 const Card = (): JSX.Element => {
-  const robotsMethods = useAppSelector(
-    ({ robotsActions }) => robotsActions.robots
-  );
   return (
     <article>
-      {robotsMethods.map((robot) => (
-        <div>
-          <img src={robot.name} alt={robot.image} />
-          <h2>Name: {robot.name}</h2>
-          <span>Creation: {robot.creation}</span>
-          <span>Speed: {robot.features.speed}</span>
-          <span>Resistance: {robot.features.resistance}</span>
-        </div>
-      ))}
+      <div>
+        <img
+          src="https://proceso.com.do/wp-content/uploads/2022/09/robot-huma.jpg"
+          alt="Robot1"
+        />
+        <h2>Name: Robot</h2>
+        <span>Creation: 1999</span>
+        <span>Speed: 5</span>
+        <span>Resistance: 4</span>
+      </div>
     </article>
   );
 };
