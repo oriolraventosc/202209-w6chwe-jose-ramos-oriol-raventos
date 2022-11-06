@@ -12,7 +12,9 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>Robots List</h1>
-        <span> Ready to explore among a lot of robots?</span>
+        <span aria-label="Explore among a lot of robots">
+          Ready to explore among a lot of robots?
+        </span>
       </header>
       <Card />
     </div>
