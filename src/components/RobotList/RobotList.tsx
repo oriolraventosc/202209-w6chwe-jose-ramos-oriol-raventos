@@ -2,6 +2,7 @@ import { useAppSelector } from "../../redux/hooks";
 import { useEffect } from "react";
 import useAPI from "../../hooks/useAPI";
 import RobotCard from "../RobotCard/RobotCard";
+import "./RobotList.css";
 
 const RobotList = (): JSX.Element => {
   const robotsList = useAppSelector(
@@ -13,7 +14,7 @@ const RobotList = (): JSX.Element => {
   }, [getAllRobots]);
 
   return (
-    <ul>
+    <ul className="robot-list">
       {robotsList.map((robot, index) => (
         <li key={index}>
           <RobotCard robot={robot} />

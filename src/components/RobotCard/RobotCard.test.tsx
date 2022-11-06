@@ -7,7 +7,7 @@ import robotsMock from "../../mocks/robotsMock";
 describe("Given a RobotCard component", () => {
   describe("When it is rendered", () => {
     test("Then it should show an article", () => {
-      const robotName = "Name:Ed-40";
+      const robotName = "Ed-40";
 
       render(
         <Provider store={store}>

@@ -1,1 +1,9 @@
+.container {
+  margin: 0 auto;
+  padding: 25px 15px;
+}
 
+.main-header {
+  text-align: center;
+  padding: 15px 0;
+}
