@@ -1,4 +1,5 @@
 import "./App.css";
+import RobotList from "../List/RobotList";
 
 const App = () => {
   return (
@@ -9,6 +10,7 @@ const App = () => {
           Ready to explore among a lot of robots?
         </span>
       </header>
+      <RobotList />
     </div>
   );
 };
