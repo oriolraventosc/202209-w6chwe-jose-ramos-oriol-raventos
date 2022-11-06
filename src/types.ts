@@ -1,4 +1,4 @@
-interface Robot {
+export interface Robot {
   name: string;
   image: string;
   creation: number;
@@ -11,4 +11,3 @@ interface Robot {
 export interface ApiRobot {
   robots: Robot[];
 }
-export default Robot;
