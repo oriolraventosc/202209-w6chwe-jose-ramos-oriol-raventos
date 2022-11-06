@@ -1,12 +1,7 @@
 import "./App.css";
-import { useEffect } from "react";
-import useAPI from "../../hooks/useAPI";
+import RobotList from "../List/RobotList";
 
 const App = () => {
-  const { getAllRobots } = useAPI();
-  useEffect(() => {
-    getAllRobots();
-  }, [getAllRobots]);
   return (
     <div className=".container">
       <header className="App-header">
@@ -15,6 +10,7 @@ const App = () => {
           Ready to explore among a lot of robots?
         </span>
       </header>
+      <RobotList />
     </div>
   );
 };
