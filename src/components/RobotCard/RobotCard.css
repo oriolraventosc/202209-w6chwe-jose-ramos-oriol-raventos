@@ -1,0 +1,21 @@
+img {
+  object-fit: cover;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.card__name {
+  padding-top: 10px;
+}
+
+.card__especifications {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
