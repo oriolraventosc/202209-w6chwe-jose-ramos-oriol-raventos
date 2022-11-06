@@ -1,7 +1,7 @@
 import { rest } from "msw";
 import robotsMock from "./robotsMock";
 
-const apiUrl = process.env.MONGODB_URL_MOCK;
+const apiUrl = process.env.REACT_APP_URL;
 
 const handlers = [
   rest.get(`${apiUrl}robots`, async (request, response, context) => {
