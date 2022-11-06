@@ -1,4 +1,4 @@
-interface RobotStructure {
+interface Robot {
   name: string;
   image: string;
   creation: number;
@@ -8,4 +8,7 @@ interface RobotStructure {
   };
 }
 
-export default RobotStructure;
+export interface ApiRobot {
+  robots: Robot[];
+}
+export default Robot;
