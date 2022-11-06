@@ -1,21 +1,24 @@
-img {
-  object-fit: cover;
+.card img {
+  width: 100%;
+  border-radius: 20px;
+  object-fit: contain;
 }
 
 .card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   padding: 20px 0;
+  padding-bottom: 60px;
 }
 
 .card__name {
   padding-top: 10px;
+  text-align: center;
 }
 
 .card__especifications {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
 }
