@@ -21,4 +21,20 @@ describe("Given a useAPI hook", () => {
       expect(dispatch).toHaveBeenCalled();
     });
   });
+
+  describe("When it is invoked with the method deleteRobots", () => {
+    test("Then it should call the dispatch method", async () => {
+      const {
+        result: {
+          current: { deleteRobot },
+        },
+      } = renderHook(() => useAPI(), {
+        wrapper: ProviderWrapper,
+      });
+      const idRobot = "660091ddd11";
+      await deleteRobot(idRobot);
+
+      expect(dispatch).toHaveBeenCalled();
+    });
+  });
 });
