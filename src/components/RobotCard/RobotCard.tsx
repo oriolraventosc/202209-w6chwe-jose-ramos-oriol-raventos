@@ -14,10 +14,10 @@ const RobotCard = ({ robot }: RobotCardProps): JSX.Element => {
   } = robot;
   return (
     <div className="card">
-      <img src={image} alt={name} width="200" height="200" />
+      <img src={image} alt={name} />
       <h2 className="card__name">{name}</h2>
       <div className="card__especifications">
-        <span>Creation: {creation}</span>
+        <span>Creation date: {creation}</span>
         <span>Speed: {speed}</span>
         <span>Resistance: {resistance}</span>
       </div>

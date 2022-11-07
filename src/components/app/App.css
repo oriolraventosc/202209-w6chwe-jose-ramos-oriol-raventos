@@ -1,9 +1,14 @@
-.container {
-  margin: 0 auto;
-  padding: 25px 15px;
+.main-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
 }
 
-.main-header {
+.main-header span {
+  padding-top: 30px;
+  font-weight: 600;
   text-align: center;
-  padding: 15px 0;
+  width: 70%;
 }
