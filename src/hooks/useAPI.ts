@@ -3,7 +3,7 @@ import {
   deleteRobotActionCreator,
   getAllRobotsActionCreator,
 } from "../redux/features/RobotsSlice/RobotsSlice";
-import { ApiRobot } from "../types";
+import { ApiRobot } from "../types.js";
 import { useCallback } from "react";
 
 const useAPI = () => {
@@ -20,10 +20,8 @@ const useAPI = () => {
   const deleteRobot = useCallback(
     async (idRobot = "") => {
       const tokenUrl = process.env.REACT_APP_TOKEN;
-      const url = `${apiUrl}robots/delete/${idRobot}?token=${tokenUrl}`;
-      const response = await fetch(url, { method: "DELETE" });
-
-      await response.json();
+      const url = `${apiUrl}robots/delete/${idRobot}?tokken=${tokenUrl}`;
+      await fetch(url, { method: "DELETE" });
 
       dispatch(deleteRobotActionCreator(idRobot));
     },
