@@ -8,7 +8,7 @@ const handlers = [
     return response(context.status(200), context.json(robotsMock));
   }),
   rest.delete(
-    `${apiUrl}robots/:idRobot?tokken=${process.env.REACT_APP_TOKEN}`,
+    `${apiUrl}robots/delete/:idRobot`,
     async (request, response, context) => {
       return response(context.status(200), context.json(robotsMock));
     }
