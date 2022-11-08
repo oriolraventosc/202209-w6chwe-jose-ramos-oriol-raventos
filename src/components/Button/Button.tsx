@@ -1,3 +1,4 @@
+import "./Button.css";
 interface ButtonProps {
   action?: () => void;
 }
@@ -5,7 +6,11 @@ interface ButtonProps {
 const Button = ({ action }: ButtonProps): JSX.Element => {
   const text = "Delete";
 
-  return <button onClick={action}>{text}</button>;
+  return (
+    <div className="card__button">
+      <button onClick={action}>{text}</button>
+    </div>
+  );
 };
 
 export default Button;
